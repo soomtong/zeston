@@ -118,6 +118,7 @@ a:hover {
 }
 
 .desc {
+    font-family: 'NanumGothic';
     display: block;
     clear: both;
     margin: 150px auto;
