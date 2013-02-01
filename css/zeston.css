@@ -118,12 +118,16 @@ a:hover {
 }
 
 .desc {
-    font-family: 'NanumGothicBold';
+    font-family: 'NanumGothicBold', '맑은 고딕', '돋움', SANS-SERIF;
     display: block;
     clear: both;
     margin: 150px auto;
     text-align: center;
     color: #4F5C65;
+}
+
+.desc a {
+    text-decoration: none;
 }
 
 #logo {
