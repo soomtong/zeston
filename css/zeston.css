@@ -208,11 +208,6 @@ a:hover {
     -webkit-transform: rotate(2deg)
 }
 
-#logo .char12 {
-    top: -65px;
-    width: 36px;
-}
-
 #logo .char10:hover {
     -webkit-transition-duration: 0.4s;
 }
@@ -221,11 +216,36 @@ a:hover {
     top: 2px;
     left: -30px;
     width: 50px;
-    -webkit-transform: rotate(-3deg)
+    -webkit-transform: rotate(-3deg);
 }
 
 #logo .char12 {
-    left: -24px
+    top: -35px;
+    left: -24px;
+    width: 36px;
+    -webkit-animation-name: question;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes question {
+    0% {
+        -webkit-transform: scale(1.0) rotate(0deg);
+    }
+    33% {
+        -webkit-transform: scale(1.1) rotate(-5deg);
+    }
+    50% {
+        -webkit-transform: scale(1.2) rotate(0deg); top: -10px;
+    }
+    67% {
+        -webkit-transform: scale(1.1) rotate(5deg);
+    }
+    100% {
+        -webkit-transform: scale(1.0) rotate(0deg);
+    }
 }
 
 @media screen and (max-width:490px) {
